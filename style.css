@@ -1,11 +1,70 @@
 body {
-    font-family: Arial,  sans-serif; /* Familia de fuentes */
-    font-size: 11px; /* El tamaño de la fuente principal en el tag <p></p> */
-    background-color: #46c5ef; /* El color del fondo de la página web */
-    color: #0000fb; /* El color del texto*/ 
+    font-family: Inter,  sans-serif; /* Familia de fuentes */
+    font-size: 15px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #5988FF; /* El color del fondo de la página web */
+    color: #D6FF6B; /* El color del texto*/ 
+    animation: color-change 5s infinite;
+    animation: color-background 7s infinite;
+    
 }
 h2 {
-    color: #ffdd00; /* El color de la cabecera */
+    color: #FD98FB; /* El color de la cabecera */
     font-size: 24px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color-back 5s infinite;
+    
+}
+
+
+@keyframes color-change {
+    0% {
+      color: rgb(0, 255, 76);
+    }
+  
+    50% {
+      color: rgb(0, 255, 64, 0.806);
+    }
+  
+    100% {
+      color: rgb(0, 255, 183, 0.669);
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-back {
+    0% {
+      color: rgb(236, 91, 222);
+    }
+  
+    50% {
+      color: rgba(237, 64, 220, 0.806);
+    }
+  
+    100% {
+      color: rgba(188, 25, 150, 0.669);
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+@keyframes color-background {
+    0% {
+      background-color: rgb(57, 212, 239);
+    }
+  
+    50% {
+      background-color: rgba(0, 179, 255, 0.806);
+    }
+  
+    100% {
+      background-color: rgba(0, 17, 255, 0.669);
+    }
+}
+
+h1 {
+    animation: color-background 3s infinite;
 }
